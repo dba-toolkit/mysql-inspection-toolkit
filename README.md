@@ -93,7 +93,7 @@ python enhance_report.py ./out --model deepseek-chat --base https://api.deepseek
 
 ### 没有代码能力？
 
-直接在 [Issues](https://github.com/wangjinsong-ai/mysql-inspection-toolkit/issues) 里提：
+直接在 [Issues](https://github.com/dba-toolkit/mysql-inspection-toolkit/issues) 里提：
 
 - **Bug 报告** — 哪个环节报错、什么环境、贴日志
 - **功能建议** — 你希望巡检覆盖什么、报告怎么展示更好
