@@ -87,6 +87,44 @@ python enhance_report.py ./out --model deepseek-chat --base https://api.deepseek
 └── logo.png                       # 封面 Logo（可替换）
 ```
 
+## 参与贡献
+
+这个项目还很年轻，需要你帮忙测试和改进。不管是不是程序员，都可以参与：
+
+### 没有代码能力？
+
+直接在 [Issues](https://github.com/wangjinsong-ai/mysql-inspection-toolkit/issues) 里提：
+
+- **Bug 报告** — 哪个环节报错、什么环境、贴日志
+- **功能建议** — 你希望巡检覆盖什么、报告怎么展示更好
+- **实测反馈** — 跑了你的环境，结果准不准、哪里不对
+
+### 会写代码？
+
+Fork → 改代码 → 提 PR：
+
+```bash
+git clone https://github.com/YOUR_USERNAME/mysql-inspection-toolkit.git
+cd mysql-inspection-toolkit
+# 改代码...
+git commit -m "feat: 你的改动描述"
+git push
+# 然后去 GitHub 页面点 "New Pull Request"
+```
+
+改之前最好先在 Issue 里说一声要做什么，避免重复劳动。
+
+### 最需要帮助的方向
+
+| 方向 | 说明 |
+|------|------|
+| **测试** | 在不同 MySQL 版本（5.7 / 8.0 / 8.4）、不同 OS 上跑一遍，反馈兼容性 |
+| **新规则** | `inspection_rules.json` 加定义 + `rules.py` 加检查逻辑，扩充巡检覆盖面 |
+| **报告样式** | `generate_report_docx_v3.py` 和 `chart_style.py`，改进 Word 排版和图表效果 |
+| **Shell 兼容性** | 采集脚本目前只测了 RHEL/CentOS，欢迎在其他 Linux 发行版测试 |
+| **英语支持** | 报告和规则目前是中文，需要英文 / 多语言支持 |
+| **新数据库** | PostgreSQL / Oracle / SQL Server 巡检适配（架构设计已预留扩展空间） |
+
 ## License
 
 MIT
